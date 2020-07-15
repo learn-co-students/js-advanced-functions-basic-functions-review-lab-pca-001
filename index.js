@@ -29,10 +29,8 @@ const Calculator = {
 }
 
 function actionApplyer(i, arr) {
-  if (arr.length) {
-    for (const func of arr) {
-      i = func(i)
-    }
+  for (const func of arr) {
+    i = func(i)
   }
   return i
 }
